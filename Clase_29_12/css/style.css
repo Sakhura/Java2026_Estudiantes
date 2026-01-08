@@ -1,0 +1,445 @@
+/*
+ * Spider-Verse Magazine - Estilos Personalizados
+ * Usando Bootstrap 5.3.3
+ */
+
+/* ==========================================
+   VARIABLES CSS - Spider-Verse Palette
+   ========================================== */
+:root {
+    --spider-verse-pink: #ff006e;
+    --spider-verse-purple: #8338ec;
+    --spider-verse-cyan: #00f5ff;
+    --spider-verse-orange: #fb5607;
+    --spider-verse-yellow: #ffbe0b;
+    --spider-verse-dark: #1a1423;
+    --spider-verse-darker: #0d0221;
+    --spider-verse-light: #f8f9fa;
+    --spider-verse-magenta: #d100d1;
+}
+
+/* ==========================================
+   ESTILOS GENERALES
+   ========================================== */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, var(--spider-verse-darker) 0%, var(--spider-verse-dark) 50%, #2d1b4e 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* ==========================================
+   NAVBAR
+   ========================================== */
+.navbar {
+    background: linear-gradient(135deg, var(--spider-verse-purple), var(--spider-verse-pink), var(--spider-verse-cyan));
+    box-shadow: 0 4px 20px rgba(255, 0, 110, 0.4);
+}
+
+.navbar-brand {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: white !important;
+    text-shadow: 0 0 10px var(--spider-verse-cyan),
+                 2px 2px 4px rgba(0,0,0,0.5);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px var(--spider-verse-cyan),
+                     0 0 20px var(--spider-verse-cyan),
+                     2px 2px 4px rgba(0,0,0,0.5);
+    }
+    to {
+        text-shadow: 0 0 15px var(--spider-verse-pink),
+                     0 0 25px var(--spider-verse-pink),
+                     2px 2px 4px rgba(0,0,0,0.5);
+    }
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--spider-verse-yellow) !important;
+    transform: translateY(-2px);
+    text-shadow: 0 0 10px var(--spider-verse-yellow);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--spider-verse-cyan);
+    transition: all 0.3s;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 80%;
+}
+
+/* ==========================================
+   HERO SECTION
+   ========================================== */
+.hero-section {
+    background: linear-gradient(135deg, 
+                rgba(131, 56, 236, 0.9) 0%, 
+                rgba(255, 0, 110, 0.8) 50%, 
+                rgba(0, 245, 255, 0.9) 100%),
+                radial-gradient(circle at 20% 50%, rgba(255, 190, 11, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(209, 0, 209, 0.3) 0%, transparent 50%),
+                var(--spider-verse-darker);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 245, 255, 0.03) 2px,
+            rgba(0, 245, 255, 0.03) 4px
+        );
+    pointer-events: none;
+}
+
+.hero-section h2 {
+    font-size: 4rem;
+    text-shadow: 
+        0 0 20px var(--spider-verse-pink),
+        0 0 40px var(--spider-verse-purple),
+        3px 3px 6px rgba(0,0,0,0.8);
+    animation: colorShift 3s ease-in-out infinite;
+}
+
+@keyframes colorShift {
+    0%, 100% {
+        color: var(--spider-verse-cyan);
+    }
+    33% {
+        color: var(--spider-verse-pink);
+    }
+    66% {
+        color: var(--spider-verse-yellow);
+    }
+}
+
+/* ==========================================
+   CARDS
+   ========================================== */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 8px 25px rgba(255, 0, 110, 0.3),
+        0 0 20px rgba(131, 56, 236, 0.2);
+    border: 1px solid rgba(0, 245, 255, 0.3);
+}
+
+main {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================================
+   BADGES
+   ========================================== */
+.badge-spiderman {
+    background: linear-gradient(135deg, var(--spider-verse-pink), var(--spider-verse-purple));
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 0, 110, 0.5);
+}
+
+/* ==========================================
+   BOTONES
+   ========================================== */
+.btn-spiderman {
+    background: linear-gradient(135deg, var(--spider-verse-pink), var(--spider-verse-purple), var(--spider-verse-cyan));
+    background-size: 200% 200%;
+    border: none;
+    color: white;
+    transition: all 0.4s;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(255, 0, 110, 0.4);
+}
+
+.btn-spiderman::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+.btn-spiderman:hover::before {
+    left: 100%;
+}
+
+.btn-spiderman:hover {
+    background-position: 100% 0;
+    transform: scale(1.05);
+    color: white;
+    box-shadow: 
+        0 8px 25px rgba(255, 0, 110, 0.6),
+        0 0 30px rgba(131, 56, 236, 0.4);
+    animation: buttonPulse 1.5s infinite;
+}
+
+@keyframes buttonPulse {
+    0%, 100% {
+        box-shadow: 
+            0 8px 25px rgba(255, 0, 110, 0.6),
+            0 0 30px rgba(131, 56, 236, 0.4);
+    }
+    50% {
+        box-shadow: 
+            0 8px 35px rgba(0, 245, 255, 0.6),
+            0 0 40px rgba(255, 190, 11, 0.4);
+    }
+}
+
+/* ==========================================
+   TÍTULOS DE SECCIÓN
+   ========================================== */
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, var(--spider-verse-pink), var(--spider-verse-purple), var(--spider-verse-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, 
+        var(--spider-verse-pink), 
+        var(--spider-verse-purple), 
+        var(--spider-verse-cyan),
+        var(--spider-verse-yellow));
+    box-shadow: 0 0 10px rgba(255, 0, 110, 0.5);
+}
+
+/* ==========================================
+   BLOCKQUOTES
+   ========================================== */
+blockquote {
+    border-left: 4px solid var(--spider-verse-pink);
+    padding-left: 20px;
+    font-style: italic;
+    color: #6c757d;
+    background: linear-gradient(90deg, rgba(255, 0, 110, 0.05), transparent);
+    padding: 15px 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+/* ==========================================
+   METER / BARRA DE PROGRESO
+   ========================================== */
+.meter-container {
+    background-color: #e9ecef;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(131, 56, 236, 0.2);
+}
+
+.meter-fill {
+    background: linear-gradient(90deg, 
+        var(--spider-verse-purple), 
+        var(--spider-verse-pink), 
+        var(--spider-verse-cyan),
+        var(--spider-verse-yellow));
+    background-size: 200% 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.3s;
+    animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* ==========================================
+   VIDEO CONTAINER
+   ========================================== */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
+    background: linear-gradient(135deg, var(--spider-verse-darker), var(--spider-verse-dark));
+    color: white;
+    padding: 40px 0 20px;
+    border-top: 3px solid;
+    border-image: linear-gradient(90deg, 
+        var(--spider-verse-pink), 
+        var(--spider-verse-purple), 
+        var(--spider-verse-cyan)) 1;
+}
+
+footer a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--spider-verse-cyan);
+    text-shadow: 0 0 10px var(--spider-verse-cyan);
+}
+
+/* ==========================================
+   FORMULARIOS
+   ========================================== */
+.form-control:focus, .form-select:focus {
+    border-color: var(--spider-verse-pink);
+    box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: var(--spider-verse-purple);
+    border-color: var(--spider-verse-purple);
+}
+
+.form-range::-webkit-slider-thumb {
+    background: linear-gradient(135deg, var(--spider-verse-pink), var(--spider-verse-purple));
+}
+
+.form-range::-moz-range-thumb {
+    background: linear-gradient(135deg, var(--spider-verse-pink), var(--spider-verse-purple));
+}
+
+/* ==========================================
+   TIMELINE
+   ========================================== */
+.timeline-item {
+    border-left: 3px solid var(--spider-verse-pink);
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--spider-verse-pink), var(--spider-verse-purple));
+    box-shadow: 0 0 10px var(--spider-verse-pink);
+}
+
+/* ==========================================
+   SIDEBAR DE DATOS
+   ========================================== */
+.sidebar-datos {
+    background: linear-gradient(135deg, 
+        rgba(131, 56, 236, 0.1), 
+        rgba(255, 0, 110, 0.1),
+        rgba(0, 245, 255, 0.1));
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 2px solid;
+    border-image: linear-gradient(135deg, 
+        var(--spider-verse-purple), 
+        var(--spider-verse-pink), 
+        var(--spider-verse-cyan)) 1;
+}
+
+/* ==========================================
+   RESPONSIVE - MOBILE
+   ========================================== */
+@media (max-width: 768px) {
+    .hero-section h2 {
+        font-size: 2.5rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .hero-section h2 {
+        font-size: 2rem;
+    }
+}

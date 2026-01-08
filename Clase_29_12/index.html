@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Revista en línea sobre la nueva película de Spider-Man">
+    <meta name="keywords" content="Spider-Man, película, Marvel, superhéroes, cine">
+    
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Spider-Verse Magazine - Todo sobre la nueva película de Spider-Man</title>
+</head>
+<body>
+    
+    <!-- Navbar principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <i class="bi bi-lightning-fill"></i> Spider-Verse Magazine
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#noticias">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#criticas">Críticas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#peliculas">Películas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#entrevistas">Entrevistas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formulario-contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <h2 class="display-1 mb-4">Spider-Man: Across the Spider-Verse</h2>
+            <p class="lead fs-3">La esperada secuela que rompe todas las expectativas</p>
+            <div class="mt-5">
+                <h3 class="fs-2">Estreno Mundial</h3>
+                <p class="fs-4"><time datetime="2024-06-02">2 de junio de 2024</time></p>
+                <p class="fs-5 mx-auto" style="max-width: 700px;">
+                    Miles Morales regresa en una aventura épica a través del multiverso que cambiará todo lo que conocemos sobre Spider-Man.
+                </p>
+                <a href="#noticias" class="btn btn-spiderman btn-lg mt-3">
+                    <i class="bi bi-arrow-down-circle"></i> Descubre más
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container my-5">
+        
+        <!-- Sección de Noticias -->
+        <section id="noticias" class="mb-5">
+            <h2 class="section-title display-4">Últimas Noticias</h2>
+            
+            <div class="row g-4">
+                <!-- Noticia 1 -->
+                <div class="col-md-6">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge badge-spiderman">Taquilla</span>
+                                <small class="text-muted"><time datetime="2024-06-05">5 de junio de 2024</time></small>
+                            </div>
+                            <h3 class="card-title h4">Récord de taquilla en el primer fin de semana</h3>
+                            <address class="text-muted small">
+                                Por <a href="mailto:maria.gonzalez@spiderversemag.com">María González</a>
+                            </address>
+                            <p class="card-text">
+                                La nueva película de Spider-Man ha superado todas las expectativas recaudando más de 120 millones de dólares en su primer fin de semana en cines.
+                            </p>
+                            <div class="alert alert-info" role="alert">
+                                <strong><i class="bi bi-info-circle"></i> Dato curioso:</strong> Esta cifra supera el récord anterior de películas animadas.
+                            </div>
+                            <div class="mt-3">
+                                <small class="text-muted">
+                                    Categorías: <a href="#taquilla" class="text-decoration-none">Taquilla</a>, 
+                                    <a href="#records" class="text-decoration-none">Récords</a>
+                                </small>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Noticia 2 -->
+                <div class="col-md-6">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-success">Confirmación</span>
+                                <small class="text-muted"><time datetime="2024-06-10">10 de junio de 2024</time></small>
+                            </div>
+                            <h3 class="card-title h4">Confirmada tercera película de la saga</h3>
+                            <address class="text-muted small">
+                                Por <a href="mailto:carlos.ramirez@spiderversemag.com">Carlos Ramírez</a>
+                            </address>
+                            <p class="card-text">
+                                Sony Pictures ha confirmado oficialmente que habrá una tercera entrega que concluirá la trilogía del Spider-Verse.
+                            </p>
+                            <blockquote class="mt-3">
+                                <p class="mb-1">"Esta es solo el principio de algo mucho más grande. Los fans no van a creer lo que viene."</p>
+                                <footer class="blockquote-footer">Phil Lord, <cite>productor ejecutivo</cite></footer>
+                            </blockquote>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Críticas -->
+        <section id="criticas" class="mb-5">
+            <h2 class="section-title display-4">Críticas y Reseñas</h2>
+            
+            <article class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3 class="card-title h3">Una obra maestra visual</h3>
+                            <address class="text-muted small mb-3">
+                                Por <a href="mailto:laura.martinez@spiderversemag.com">Laura Martínez</a>
+                            </address>
+                            
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Calificación:</label>
+                                <div class="meter-container">
+                                    <div class="meter-fill" style="width: 95%"></div>
+                                </div>
+                                <span class="badge bg-warning text-dark mt-2">9.5 / 10</span>
+                            </div>
+                            
+                            <p class="lead">
+                                Spider-Man: Across the Spider-Verse no es solo una película, es una experiencia cinematográfica que redefine lo que puede ser una película animada de superhéroes.
+                            </p>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="card bg-success bg-opacity-10 border-success">
+                                        <div class="card-body">
+                                            <h4 class="card-title h5"><i class="bi bi-hand-thumbs-up-fill text-success"></i> Aspectos destacados:</h4>
+                                            <ul class="list-unstyled">
+                                                <li><i class="bi bi-check-circle-fill text-success"></i> Animación revolucionaria</li>
+                                                <li><i class="bi bi-check-circle-fill text-success"></i> Narrativa compleja y emocionante</li>
+                                                <li><i class="bi bi-check-circle-fill text-success"></i> Desarrollo de personajes excepcional</li>
+                                                <li><i class="bi bi-check-circle-fill text-success"></i> Banda sonora impactante</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card bg-warning bg-opacity-10 border-warning">
+                                        <div class="card-body">
+                                            <h4 class="card-title h5"><i class="bi bi-exclamation-triangle-fill text-warning"></i> Aspectos a mejorar:</h4>
+                                            <ul class="list-unstyled">
+                                                <li><i class="bi bi-dash-circle-fill text-warning"></i> Ritmo ligeramente irregular en el segundo acto</li>
+                                                <li><i class="bi bi-dash-circle-fill text-warning"></i> Puede resultar abrumadora para quienes no vieron la primera</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Ficha Técnica</h5>
+                                    <hr>
+                                    <p class="mb-2"><strong>Directores:</strong><br>Joaquim Dos Santos, Kemp Powers, Justin K. Thompson</p>
+                                    <p class="mb-2"><strong>Duración:</strong><br>140 minutos</p>
+                                    <p class="mb-2"><strong>Género:</strong><br>Animación, Acción, Aventura</p>
+                                    <p class="mb-2"><strong>Clasificación:</strong><br>PG</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección de Películas Anteriores -->
+        <section id="peliculas" class="mb-5">
+            <h2 class="section-title display-4">Películas de la Saga</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <article class="card">
+                        <div class="card-body">
+                            <div class="timeline-item mb-3">
+                                <h3 class="h4">Spider-Man: Into the Spider-Verse (2018)</h3>
+                                <p class="text-muted">Primera entrega</p>
+                            </div>
+                            <p>
+                                La película que inició todo. Miles Morales descubre sus poderes y conoce a diferentes versiones de Spider-Man del multiverso.
+                            </p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="bi bi-trophy-fill text-warning"></i> Ganadora del Oscar a Mejor Película Animada</li>
+                                <li class="list-group-item"><i class="bi bi-star-fill text-warning"></i> 97% en Rotten Tomatoes</li>
+                                <li class="list-group-item"><i class="bi bi-cash-coin text-success"></i> $384 millones en taquilla mundial</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-md-6">
+                    <article class="card border-danger">
+                        <div class="card-body">
+                            <div class="timeline-item mb-3">
+                                <h3 class="h4">Spider-Man: Across the Spider-Verse (2024)</h3>
+                                <p class="text-danger fw-bold">¡Ahora en cines!</p>
+                            </div>
+                            <p>
+                                Miles Morales se enfrenta a la sociedad de Spider-People mientras intenta salvar a su padre y enfrentar su destino como Spider-Man.
+                            </p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="bi bi-graph-up-arrow text-success"></i> Récord de taquilla para películas animadas</li>
+                                <li class="list-group-item"><i class="bi bi-people-fill text-primary"></i> Más de 280 variantes de Spider-Man</li>
+                                <li class="list-group-item"><i class="bi bi-clock-fill text-info"></i> 4 años de producción</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Entrevistas -->
+        <section id="entrevistas" class="mb-5">
+            <h2 class="section-title display-4">Entrevistas Exclusivas</h2>
+            
+            <div class="accordion" id="accordionEntrevistas">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#entrevista1">
+                            <i class="bi bi-mic-fill me-2"></i> Shameik Moore sobre interpretar a Miles Morales
+                        </button>
+                    </h3>
+                    <div id="entrevista1" class="accordion-collapse collapse show" data-bs-parent="#accordionEntrevistas">
+                        <div class="accordion-body">
+                            <address class="text-muted small">
+                                Entrevista realizada por <a href="mailto:ana.lopez@spiderversemag.com">Ana López</a> - 
+                                <time datetime="2024-06-15">15 de junio de 2024</time>
+                            </address>
+                            <p>
+                                "Interpretar a Miles ha sido el viaje más increíble de mi carrera. En esta segunda película, vemos a un Miles más maduro, más seguro de sí mismo, pero también más vulnerable."
+                            </p>
+                            <blockquote>
+                                <p>"Lo que hace especial a Miles es que representa a tantos jóvenes que sienten que no encajan. Él demuestra que ser diferente es tu mayor fortaleza."</p>
+                            </blockquote>
+                            <p>
+                                Moore también habló sobre los desafíos de grabar durante la pandemia y cómo eso influyó en su interpretación del personaje.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#entrevista2">
+                            <i class="bi bi-palette-fill me-2"></i> Los directores hablan sobre la innovación visual
+                        </button>
+                    </h3>
+                    <div id="entrevista2" class="accordion-collapse collapse" data-bs-parent="#accordionEntrevistas">
+                        <div class="accordion-body">
+                            <address class="text-muted small">
+                                Entrevista realizada por <a href="mailto:roberto.silva@spiderversemag.com">Roberto Silva</a> - 
+                                <time datetime="2024-06-18">18 de junio de 2024</time>
+                            </address>
+                            <p>
+                                Los directores Joaquim Dos Santos, Kemp Powers y Justin K. Thompson compartieron los secretos detrás de la revolucionaria animación de la película.
+                            </p>
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <h4 class="h6 fw-bold">Técnica artística única</h4>
+                                    <p class="small">
+                                        Cada universo tiene su propio estilo visual distintivo. Desde el punk-rock de Hobie's London hasta el renacimiento italiano de Pavitr's Mumbai.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="h6 fw-bold">Desafíos técnicos</h4>
+                                    <p class="small">
+                                        La película requirió desarrollar nuevas herramientas de software para lograr efectos que nunca antes se habían visto en animación.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#entrevista3">
+                            <i class="bi bi-music-note-beamed me-2"></i> Daniel Pemberton sobre la banda sonora
+                        </button>
+                    </h3>
+                    <div id="entrevista3" class="accordion-collapse collapse" data-bs-parent="#accordionEntrevistas">
+                        <div class="accordion-body">
+                            <address class="text-muted small">
+                                Entrevista realizada por <a href="mailto:lucia.torres@spiderversemag.com">Lucía Torres</a> - 
+                                <time datetime="2024-06-20">20 de junio de 2024</time>
+                            </address>
+                            <p>
+                                El compositor Daniel Pemberton nos habla sobre cómo creó una banda sonora que atraviesa múltiples universos y estilos musicales.
+                            </p>
+                            <div class="alert alert-primary">
+                                <h4 class="alert-heading h6"><i class="bi bi-headphones"></i> Playlist recomendada</h4>
+                                <p class="mb-0 small">Escucha los temas destacados de la banda sonora en todas las plataformas de streaming.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Galería -->
+        <section id="galeria" class="mb-5">
+            <h2 class="section-title display-4">Galería de Imágenes</h2>
+            
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <figure class="card">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                            <div class="d-flex align-items-center justify-content-center text-white">
+                                <i class="bi bi-image" style="font-size: 3rem;"></i>
+                            </div>
+                        </div>
+                        <figcaption class="card-body">
+                            <p class="card-text small text-muted">Miles Morales en acción a través del multiverso</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="card">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                            <div class="d-flex align-items-center justify-content-center text-white">
+                                <i class="bi bi-image" style="font-size: 3rem;"></i>
+                            </div>
+                        </div>
+                        <figcaption class="card-body">
+                            <p class="card-text small text-muted">Spider-Gwen y Miles juntos de nuevo</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="card">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                            <div class="d-flex align-items-center justify-content-center text-white">
+                                <i class="bi bi-image" style="font-size: 3rem;"></i>
+                            </div>
+                        </div>
+                        <figcaption class="card-body">
+                            <p class="card-text small text-muted">La impresionante sociedad de Spider-People</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="card">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                            <div class="d-flex align-items-center justify-content-center text-white">
+                                <i class="bi bi-image" style="font-size: 3rem;"></i>
+                            </div>
+                        </div>
+                        <figcaption class="card-body">
+                            <p class="card-text small text-muted">Spot, el nuevo y amenazante villano</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="card">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                            <div class="d-flex align-items-center justify-content-center text-white">
+                                <i class="bi bi-image" style="font-size: 3rem;"></i>
+                            </div>
+                        </div>
+                        <figcaption class="card-body">
+                            <p class="card-text small text-muted">Arte conceptual de Nueva York en el Spider-Verse</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="card">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                            <div class="d-flex align-items-center justify-content-center text-white">
+                                <i class="bi bi-image" style="font-size: 3rem;"></i>
+                            </div>
+                        </div>
+                        <figcaption class="card-body">
+                            <p class="card-text small text-muted">Behind the scenes: Los animadores en acción</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="mt-4">
+                <h3 class="h4">Videos Destacados</h3>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title h5">Trailer Oficial</h4>
+                                <div class="video-container bg-dark rounded">
+                                    <div class="d-flex align-items-center justify-content-center h-100 text-white">
+                                        <i class="bi bi-play-circle" style="font-size: 4rem;"></i>
+                                    </div>
+                                </div>
+                                <p class="card-text small text-muted mt-2">Duración: 2:34</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title h5">Making Of - El Arte de la Animación</h4>
+                                <div class="video-container bg-dark rounded">
+                                    <div class="d-flex align-items-center justify-content-center h-100 text-white">
+                                        <i class="bi bi-play-circle" style="font-size: 4rem;"></i>
+                                    </div>
+                                </div>
+                                <p class="card-text small text-muted mt-2">Duración: 12:45</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section id="formulario-contacto" class="mb-5">
+            <h2 class="section-title display-4">Contacto</h2>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <form action="procesar-formulario.php" method="post" id="contactForm">
+                                <!-- Información Personal -->
+                                <fieldset class="mb-4">
+                                    <legend class="h5 border-bottom pb-2">Información Personal</legend>
+                                    
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="nombre" class="form-label">Nombre completo <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="nombre" name="nombre" required 
+                                                   placeholder="Ej: Juan Pérez" minlength="3" maxlength="100">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="email" class="form-label">Correo electrónico <span class="text-danger">*</span></label>
+                                            <input type="email" class="form-control" id="email" name="email" required 
+                                                   placeholder="tu@email.com">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="telefono" class="form-label">Teléfono</label>
+                                            <input type="tel" class="form-control" id="telefono" name="telefono" 
+                                                   placeholder="+56 9 1234 5678" pattern="[+]?[0-9\s-()]+">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="edad" class="form-label">Edad</label>
+                                            <input type="number" class="form-control" id="edad" name="edad" 
+                                                   min="13" max="120" placeholder="18">
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <!-- Mensaje -->
+                                <fieldset class="mb-4">
+                                    <legend class="h5 border-bottom pb-2">Tu Mensaje</legend>
+                                    
+                                    <div class="mb-3">
+                                        <label for="asunto" class="form-label">Asunto <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="asunto" name="asunto" required 
+                                               placeholder="¿Sobre qué quieres escribirnos?">
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="tipo-contacto" class="form-label">Tipo de consulta <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="tipo-contacto" name="tipo-contacto" required>
+                                            <option value="">Selecciona una opción</option>
+                                            <option value="consulta">Consulta general</option>
+                                            <option value="critica">Sugerencias para críticas</option>
+                                            <option value="colaboracion">Propuesta de colaboración</option>
+                                            <option value="tecnico">Problema técnico</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="mensaje" class="form-label">Mensaje <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required 
+                                                  placeholder="Escribe tu mensaje aquí..." minlength="10" maxlength="1000"></textarea>
+                                        <div class="form-text">Mínimo 10 caracteres, máximo 1000</div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="archivo" class="form-label">Adjuntar archivo (opcional)</label>
+                                        <input type="file" class="form-control" id="archivo" name="archivo" 
+                                               accept=".pdf,.doc,.docx,.jpg,.png">
+                                        <div class="form-text">Formatos permitidos: PDF, DOC, DOCX, JPG, PNG (máx. 5MB)</div>
+                                    </div>
+                                </fieldset>
+
+                                <!-- Preferencias -->
+                                <fieldset class="mb-4">
+                                    <legend class="h5 border-bottom pb-2">Preferencias de Comunicación</legend>
+                                    
+                                    <div class="mb-3">
+                                        <label class="form-label">¿Cómo prefieres que te contactemos?</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="contacto-preferido" 
+                                                   id="contacto-email" value="email" checked>
+                                            <label class="form-check-label" for="contacto-email">Correo electrónico</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="contacto-preferido" 
+                                                   id="contacto-telefono" value="telefono">
+                                            <label class="form-check-label" for="contacto-telefono">Teléfono</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="contacto-preferido" 
+                                                   id="contacto-whatsapp" value="whatsapp">
+                                            <label class="form-check-label" for="contacto-whatsapp">WhatsApp</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label class="form-label">Temas de interés (selecciona todos los que apliquen):</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="intereses[]" 
+                                                   id="interes-peliculas" value="peliculas">
+                                            <label class="form-check-label" for="interes-peliculas">Nuevas películas</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="intereses[]" 
+                                                   id="interes-comics" value="comics">
+                                            <label class="form-check-label" for="interes-comics">Comics</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="intereses[]" 
+                                                   id="interes-merchandising" value="merchandising">
+                                            <label class="form-check-label" for="interes-merchandising">Merchandising</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="intereses[]" 
+                                                   id="interes-eventos" value="eventos">
+                                            <label class="form-check-label" for="interes-eventos">Eventos y convenciones</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" name="newsletter" id="newsletter">
+                                        <label class="form-check-label" for="newsletter">
+                                            Deseo suscribirme al newsletter semanal de Spider-Verse Magazine
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="frecuencia" class="form-label">Frecuencia preferida de correos:</label>
+                                        <select class="form-select" id="frecuencia" name="frecuencia">
+                                            <option value="diaria">Diaria</option>
+                                            <option value="semanal" selected>Semanal</option>
+                                            <option value="quincenal">Quincenal</option>
+                                            <option value="mensual">Mensual</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+
+                                <!-- Opinión del sitio -->
+                                <fieldset class="mb-4">
+                                    <legend class="h5 border-bottom pb-2">Tu Opinión sobre Nuestro Sitio</legend>
+                                    
+                                    <div class="mb-3">
+                                        <label for="calificacion" class="form-label">
+                                            ¿Cómo calificarías nuestro sitio web? 
+                                            <output for="calificacion" class="badge bg-primary" id="calificacion-output">5</output> / 10
+                                        </label>
+                                        <input type="range" class="form-range" id="calificacion" name="calificacion" 
+                                               min="1" max="10" value="5" step="1">
+                                    </div>
+                                    
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="fecha-visita" class="form-label">¿Cuándo nos visitaste por primera vez?</label>
+                                            <input type="date" class="form-control" id="fecha-visita" name="fecha-visita" 
+                                                   min="2018-01-01" max="2024-12-31">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="color-favorito" class="form-label">Color favorito para el diseño del sitio:</label>
+                                            <input type="color" class="form-control form-control-color" id="color-favorito" 
+                                                   name="color-favorito" value="#e31b23">
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <!-- Confirmación -->
+                                <fieldset class="mb-4">
+                                    <legend class="h5 border-bottom pb-2">Confirmación</legend>
+                                    
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" name="terminos" id="terminos" required>
+                                        <label class="form-check-label" for="terminos">
+                                            Acepto los <a href="#terminos" class="text-decoration-none">términos y condiciones</a> 
+                                            y la <a href="#privacidad" class="text-decoration-none">política de privacidad</a> 
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" name="mayor-edad" id="mayor-edad" required>
+                                        <label class="form-check-label" for="mayor-edad">
+                                            Confirmo que soy mayor de 13 años <span class="text-danger">*</span>
+                                        </label>
+                                    </div>
+                                </fieldset>
+
+                                <!-- Botones -->
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                    <button type="submit" class="btn btn-spiderman btn-lg">
+                                        <i class="bi bi-send-fill"></i> Enviar mensaje
+                                    </button>
+                                    <button type="reset" class="btn btn-outline-secondary btn-lg">
+                                        <i class="bi bi-arrow-counterclockwise"></i> Limpiar formulario
+                                    </button>
+                                </div>
+                                
+                                <p class="mt-3"><small class="text-muted"><span class="text-danger">*</span> Campos obligatorios</small></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title h5"><i class="bi bi-info-circle-fill text-primary"></i> Otras formas de contacto</h3>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2">
+                                    <i class="bi bi-envelope-fill text-danger"></i> 
+                                    <strong>Email directo:</strong><br>
+                                    <a href="mailto:info@spiderversemag.com" class="text-decoration-none">info@spiderversemag.com</a>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-telephone-fill text-success"></i> 
+                                    <strong>Teléfono:</strong><br>
+                                    <a href="tel:+56912345678" class="text-decoration-none">+56 9 1234 5678</a>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-whatsapp text-success"></i> 
+                                    <strong>WhatsApp:</strong><br>
+                                    <a href="https://wa.me/56912345678" class="text-decoration-none">+56 9 1234 5678</a>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-clock-fill text-info"></i> 
+                                    <strong>Horario de atención:</strong><br>
+                                    Lunes a Viernes, 9:00 - 18:00 hrs (GMT-3)
+                                </li>
+                            </ul>
+                            <div class="alert alert-info mt-3">
+                                <small><strong><i class="bi bi-alarm"></i> Tiempo de respuesta:</strong> 
+                                Generalmente respondemos en menos de 24 horas hábiles.</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sidebar de datos curiosos -->
+                    <aside class="sidebar-datos">
+                        <h2 class="h4 mb-3"><i class="bi bi-lightbulb-fill text-warning"></i> Sabías que...</h2>
+                        <h3 class="h6">Datos curiosos sobre la película</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Se utilizaron más de 240 animadores para crear la película</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Cada frame fue pintado a mano digitalmente</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Aparecen más de 280 variantes de Spider-Man</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> La película tardó más de 4 años en completarse</li>
+                            <li class="mb-2"><i class="bi bi-trophy-fill text-warning"></i> Into the Spider-Verse ganó el Oscar a Mejor Película Animada en 2019</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3 class="h5 mb-3">Sobre Nosotros</h3>
+                    <p>Spider-Verse Magazine es la revista digital líder en noticias, críticas y contenido exclusivo sobre el universo de Spider-Man.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h3 class="h5 mb-3">Síguenos</h3>
+                    <nav>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="#twitter"><i class="bi bi-twitter"></i> Twitter</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#instagram"><i class="bi bi-instagram"></i> Instagram</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#facebook"><i class="bi bi-facebook"></i> Facebook</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#youtube"><i class="bi bi-youtube"></i> YouTube</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="col-md-4">
+                    <h3 class="h5 mb-3">Contacto</h3>
+                    <address>
+                        <p><i class="bi bi-envelope"></i> Email: <a href="mailto:info@spiderversemag.com">info@spiderversemag.com</a></p>
+                        <p><i class="bi bi-telephone"></i> Teléfono: <a href="tel:+56912345678">+56 9 1234 5678</a></p>
+                    </address>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="small mb-0">&copy; 2024 Spider-Verse Magazine. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <nav>
+                        <a href="#terminos" class="small me-3">Términos y Condiciones</a>
+                        <a href="#privacidad" class="small me-3">Política de Privacidad</a>
+                        <a href="#cookies" class="small">Política de Cookies</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript personalizado -->
+    <script src="js/script.js"></script>
+</body>
+</html>
