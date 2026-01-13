@@ -2,7 +2,7 @@
 
 ## 📋 Descripción del Curso
 
-Repositorio oficial del curso **Java Trainee 2026**, diseñado para estudiantes que comienzan su camino en el desarrollo de software. Este programa abarca desde fundamentos de programación web (HTML, CSS, JavaScript) hasta el desarrollo backend con Java.
+Repositorio oficial del curso **Java Trainee 2026**, diseñado para estudiantes que comienzan su camino en el desarrollo de software. Este programa abarca desde fundamentos de programación web (HTML, CSS, JavaScript) hasta el desarrollo backend con Java y bases de datos.
 
 ---
 
@@ -12,6 +12,7 @@ Repositorio oficial del curso **Java Trainee 2026**, diseñado para estudiantes 
 - Aprender manipulación del DOM y programación orientada a eventos
 - Implementar interactividad con jQuery
 - Desarrollar aplicaciones web funcionales
+- Aprender diseño y gestión de bases de datos relacionales con MySQL
 - Prepararse para el aprendizaje de Java y desarrollo backend
 - Crear proyectos reales aplicando buenas prácticas de desarrollo
 
@@ -67,6 +68,26 @@ Repositorio oficial del curso **Java Trainee 2026**, diseñado para estudiantes 
 - Efectos: `.fadeIn()`
 - Bootstrap 5 para diseño
 
+### **Clase_12_01** - Bases de Datos MySQL
+#### Fundamentos de Bases de Datos Relacionales
+- Introducción a MySQL
+- Diseño de bases de datos
+- Conceptos de tablas, registros y campos
+- Tipos de datos en MySQL
+- Claves primarias y foráneas
+- Relaciones entre tablas
+- **Nivel:** Principiante a Intermedio
+
+#### Temas a desarrollar en próximas sesiones:
+- SQL básico (SELECT, INSERT, UPDATE, DELETE)
+- Consultas con JOINs (INNER, LEFT, RIGHT, FULL)
+- Funciones agregadas (COUNT, SUM, AVG, MIN, MAX)
+- Cláusulas GROUP BY y HAVING
+- Subconsultas y consultas anidadas
+- Normalización de bases de datos
+- Índices y optimización
+- Proyectos prácticos con MySQL
+
 ---
 
 ## 🛠️ Tecnologías Utilizadas
@@ -79,6 +100,7 @@ Repositorio oficial del curso **Java Trainee 2026**, diseñado para estudiantes 
 | jQuery | 3.7.1 | Manipulación del DOM simplificada |
 | Bootstrap | 5.3.8 | Framework CSS |
 | Bootstrap Icons | 1.11.3 | Iconografía |
+| MySQL | 8.0+ | Sistema de gestión de bases de datos |
 
 ---
 
@@ -123,6 +145,9 @@ Java2026_Estudiantes/
 │       ├── css/styles.css
 │       └── js/scripts.js
 │
+├── Clase_12_01/
+│   └── [Archivos de bases de datos MySQL]
+│
 ├── html_js_css/
 │   └── index.html
 │
@@ -146,7 +171,14 @@ Los proyectos son páginas HTML estáticas. Simplemente abre los archivos `index
 - **Opción 2:** Click derecho → Abrir con → Navegador preferido
 - **Opción 3:** Usar Live Server en VS Code (recomendado)
 
-### **3. Extensión recomendada para VS Code**
+### **3. Trabajar con MySQL (Clase_12_01)**
+Para las bases de datos necesitarás:
+1. Instalar MySQL Server
+2. Instalar MySQL Workbench (interfaz gráfica recomendada)
+3. Importar los archivos .sql proporcionados
+4. Seguir las instrucciones específicas de cada sesión
+
+### **4. Extensión recomendada para VS Code**
 ```
 Live Server by Ritwick Dey
 ```
@@ -227,11 +259,19 @@ Autenticación básica con:
 - ✅ Eventos (`.click()`, `.submit()`)
 - ✅ Efectos (`.fadeIn()`, `.fadeOut()`)
 
+### **MySQL** (En desarrollo)
+- 🔄 Modelado de bases de datos relacionales
+- 🔄 Tipos de datos y restricciones
+- 🔄 Consultas SQL básicas e intermedias
+- 🔄 Relaciones entre tablas
+- 🔄 Normalización
+- 🔄 Optimización de consultas
+
 ---
 
 ## 🎓 Próximos Temas (Java Backend)
 
-Este curso de fundamentos web es preparatorio para:
+Este curso de fundamentos web y bases de datos es preparatorio para:
 
 - ☑️ Programación Orientada a Objetos (POO)
 - ☑️ Java SE (Standard Edition)
@@ -240,7 +280,8 @@ Este curso de fundamentos web es preparatorio para:
 - ☑️ JDBC (Java Database Connectivity)
 - ☑️ Spring Framework
 - ☑️ API REST con Spring Boot
-- ☑️ Bases de datos (MySQL/PostgreSQL)
+- ☑️ JPA/Hibernate (ORM)
+- ☑️ Integración Java + MySQL
 
 ---
 
@@ -253,6 +294,7 @@ Este curso de fundamentos web es preparatorio para:
 - 📱 Diseño responsivo (mobile-first)
 - 🔒 Validaciones en el cliente
 - 🎯 Separación de responsabilidades (HTML/CSS/JS)
+- 🗄️ Diseño estructurado de bases de datos
 
 ---
 
@@ -267,9 +309,10 @@ Este repositorio es parte de un curso educativo. Los estudiantes pueden:
 
 ---
 
-## 👨‍🏫 Instructor Sabina Romero
+## 👨‍🏫 Instructor
 
-**Curso Java Trainee 2026**
+**Sabina Romero**  
+Curso Java Trainee 2026
 
 ---
 
@@ -293,17 +336,21 @@ Este proyecto es material educativo del curso Java Trainee 2026.
 - [MDN Web Docs](https://developer.mozilla.org/) - HTML, CSS, JavaScript
 - [jQuery Documentation](https://api.jquery.com/)
 - [Bootstrap Documentation](https://getbootstrap.com/docs/)
+- [MySQL Documentation](https://dev.mysql.com/doc/)
 
 ### **Herramientas Recomendadas**
 - **Editor:** Visual Studio Code
 - **Navegador:** Chrome/Firefox DevTools
 - **Git:** Control de versiones
-- **Extensions:** Live Server, Prettier, ESLint
+- **MySQL Workbench:** Gestión visual de bases de datos
+- **Extensions:** Live Server, Prettier, ESLint, MySQL for VSCode
 
 ### **Práctica**
 - [freeCodeCamp](https://www.freecodecamp.org/)
 - [JavaScript30](https://javascript30.com/)
 - [Codecademy](https://www.codecademy.com/)
+- [SQLZoo](https://sqlzoo.net/) - Práctica de SQL
+- [LeetCode Database](https://leetcode.com/problemset/database/) - Ejercicios SQL
 
 ---
 
@@ -316,6 +363,8 @@ Al completar este módulo, serás capaz de:
 - ✅ Implementar interactividad con JavaScript
 - ✅ Manipular el DOM eficientemente
 - ✅ Utilizar jQuery para desarrollo rápido
+- ✅ Diseñar y gestionar bases de datos relacionales
+- ✅ Escribir consultas SQL eficientes
 - ✅ Crear aplicaciones web funcionales
 - ✅ Aplicar buenas prácticas de desarrollo
 
